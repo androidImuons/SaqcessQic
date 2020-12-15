@@ -6,11 +6,12 @@ import android.content.Context;
 public class MyApplication extends Application {
 
     private static MyApplication mInstance;
-public static Context context;
+    public static Context context;
+
     @Override
     public void onCreate() {
         super.onCreate();
-context=getApplicationContext();
+        context = getApplicationContext();
         mInstance = this;
     }
 
